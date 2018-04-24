@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 3000px;
+  width: 5000px;
+  background: #f77ea8;
+  position: absolute;
+  z-index: -1;
+  top: -2500px;
+  transform: rotate(-52deg);
+  overflow: unset;
+}
+
+header {
+  width: 100%;
+  min-height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+header h1 {
+  font-size: 40px;
+  text-align: center;
+  width: 70%;
+  margin-bottom: 50px;
+  line-height: 60px;
+  color: white;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 35px;
+  opacity: 0.75;
+}
+
+section {
+  width: 100%;
+}
+
+section div {
+  width: 100%;
+  padding: 11px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 5px;
+  background: white;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #f0f0f0;
+  transition: 0.1s ease-out 0s;
+}
+
+section div:hover {
+  opacity: 0.85;
+  transition: 0.1s ease-out 0s;
+}
+
+section div h3 {
+  font-weight: normal;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+section div section {
+  display: inline-flex;
+  float: right;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section div section :nth-child(1) {
+  color: #bebebe;
+  font-size: 15px;
+}
+
+section div section :nth-child(2) {
+  background: #f0f0f0;
+  border-radius: 5px;
+  color: white;
+  padding: 7px;
+  font-size: 15px;
+  margin-left: 25px;
+  transition: 0.2s ease-out 0s;
+  color: #b4b4b4;
+}
+
+section div section:hover > :nth-child(2) {
+  background-color: dodgerblue;
+  transition: 0.2s ease-out 0s;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

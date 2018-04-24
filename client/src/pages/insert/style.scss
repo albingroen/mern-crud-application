@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  height: calc(100vh - 60px);
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 25px;
+    position: relative;
+
+    input {
+      background: #f5f5f5;
+      border: none;
+      border-radius: 5px;
+      padding: 12px;
+      font-size: 17px;
+      margin-bottom: 15px;
+      transition: 0.2s ease-out 0s;
+      &::placeholder {
+        opacity: 0.4;
+      }
+      &:focus {
+        outline: none;
+        background: #ebebeb;
+        transition: 0.2s ease-out 0s;
+      }
+    }
+
+    .button-wrapper {
+      position: absolute;
+      bottom: 25px;
+      width: calc(100% - 50px);
+    }
+  }
+}
